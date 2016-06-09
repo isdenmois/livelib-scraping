@@ -1,0 +1,26 @@
+img.mdl-list__item-icon {
+    width: 70px;
+    height: auto;
+}
+
+.book-name {
+    display: block;
+    font-size: 24px;
+}
+
+.author {
+    font-size: 18px;
+}
+
+.mdl-list__item--three-line {
+    height: 100px;
+}
+
+.mdl-list__item--three-line .mdl-list__item-primary-content {
+    height: 100px;
+}
+
+span.rating {
+    margin-left: 10px;
+    font-size: 20px;
+}

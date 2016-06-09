@@ -1,0 +1,7 @@
+node_modules
+options.json
+captcha.jpg
+results/*.html
+results/*.json
+results/*.xlsx
+.idea

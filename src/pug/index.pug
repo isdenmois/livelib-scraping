@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(charset="utf-8")
+    link(rel="stylesheet", href="../node_modules/material-design-lite/dist/material.min.css")
+    link(rel="stylesheet", href="../src/style/style.css")
+  body
+    .mdl-layout__container.mdl-layout.mdl-js-layout
+      .mdl-layout__header
+        .mdl-layout__header-row
+          .mdl-layout__title
+            .mdl-layout__title= pageTitle
+      .mdl-layout__content
+        .page-content
+            each item in items
+                ul.mdl-list
+                    li.mdl-list__item.mdl-list__item--three-line
+                        span.mdl-list__item-primary-content
+                            img.mdl-list__item-icon(src=item.image)
+                            .book-name= item.title
+                                span.rating= '(' + item.rate + ' | ' + item.rating + ')'
+                            .author= item.author
+                            .isbn= item.ISBN
+                            .description= item.description
